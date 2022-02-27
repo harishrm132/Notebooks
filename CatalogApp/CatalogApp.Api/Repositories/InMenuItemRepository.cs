@@ -19,7 +19,7 @@ namespace CatalogApp.Api.Repositories{
             return await Task.FromResult(items);
         }
 
-        public async Task<Item> GetItemAync(Guid id)
+        public async Task<Item> GetItemAsync(Guid id)
         {
             var item = items.FirstOrDefault(x => x.Id == id);
             return await Task.FromResult(item);

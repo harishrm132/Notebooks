@@ -7,7 +7,7 @@ namespace CatalogApp.Api.Repositories
 {
     public interface IInMenuItemRepository
     {
-        Task<Item> GetItemAync(Guid id);
+        Task<Item> GetItemAsync(Guid id);
         Task<IEnumerable<Item>> GetItemsAsync();
         Task CreateItemAsync(Item item);
         Task UpdateItemAsync(Item item);

@@ -26,7 +26,7 @@ namespace CatalogApp.Api.Repositories
             return await itemsCollection.Find(new BsonDocument()).ToListAsync();
         }
 
-        public async Task<Item> GetItemAync(Guid id)
+        public async Task<Item> GetItemAsync(Guid id)
         {
             var filter = filterBuilder.Eq(item => item.Id, id);
             return await itemsCollection.Find(filter).SingleOrDefaultAsync();
